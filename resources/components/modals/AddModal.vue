@@ -85,7 +85,7 @@ export default defineComponent({
         formData(){
             console.log(this.registrationNumber)
             if(this.isRegistered === false){
-                this.registrationNumber = null;
+                this.registrationNumber = 'null';
                 console.log(this.registrationNumber)
             }
             return this.selectedType === 'car'

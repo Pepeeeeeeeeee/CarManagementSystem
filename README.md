@@ -38,7 +38,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Start the Development Server
 ```sh
-php artisan migrate
+php artisan migrate:fresh --seed
 npm run dev
 php artisan serve
 ```

@@ -120,7 +120,7 @@ export default defineComponent({
                     this.rows = response.data.map(item => {
                         if(item.is_registered !== undefined){
                             item.is_registered = item.is_registered ? 'Yes' : 'No';
-
+                            if(item.registration_number === 'null') item.registration_number = 'None';
                         }
 
                         delete item.created_at;
